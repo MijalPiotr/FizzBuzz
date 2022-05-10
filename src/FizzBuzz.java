@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzz {
-    public static String FizzBuzz1(int i) {
+    public static String fizzBuzz1(int i) {
         if (i % 15 == 0) {
             return "FizzBuzz";
         } else if (i % 5 == 0) {
@@ -16,15 +16,15 @@ public class FizzBuzz {
 
     @Test
     public void testFizzBuzz() {
-        assertEquals("FizzBuzz", FizzBuzz1(15));
-        assertEquals("Buzz", FizzBuzz1(5));
-        assertEquals("Fizz", FizzBuzz1(3));
-        assertEquals("2", FizzBuzz1(2));
+        assertEquals("FizzBuzz", fizzBuzz1(15));
+        assertEquals("Buzz", fizzBuzz1(5));
+        assertEquals("Fizz", fizzBuzz1(3));
+        assertEquals("2", fizzBuzz1(2));
     }
 
     public static void main(String[] args) {
         for (int i = 1; i <= 100; ++i) {
-            System.out.println(FizzBuzz.FizzBuzz1(i));
+            System.out.println(FizzBuzz.fizzBuzz1(i));
         }
     }
 }
